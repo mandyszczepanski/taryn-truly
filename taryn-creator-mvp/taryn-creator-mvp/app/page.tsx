@@ -67,7 +67,7 @@ export default function DashboardPage() {
               tickFormatter={(v: number) => formatFollowers(v)}
             />
             <Tooltip
-              formatter={(value) => formatFollowers(Number(value))}
+              formatter={(value: number) => formatFollowers(value)}
               contentStyle={{ borderRadius: 12, border: "1px solid #EBE7E3" }}
             />
             <Legend />
