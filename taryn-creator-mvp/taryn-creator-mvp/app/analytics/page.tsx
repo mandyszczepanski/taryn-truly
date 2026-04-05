@@ -103,7 +103,7 @@ export default function AnalyticsPage() {
               tickFormatter={(v: number) => formatFollowers(v)}
             />
             <Tooltip
-              formatter={(value) => formatFollowers(Number(value))}
+              formatter={(value: number) => formatFollowers(value)}
               contentStyle={{ borderRadius: 12, border: "1px solid #EBE7E3" }}
             />
             <Legend />
@@ -130,7 +130,7 @@ export default function AnalyticsPage() {
             <CartesianGrid strokeDasharray="3 3" stroke="#EBE7E3" />
             <XAxis dataKey="name" tick={{ fontSize: 12, fill: "#8B6F5E" }} />
             <YAxis tick={{ fontSize: 12, fill: "#8B6F5E" }} tickFormatter={(v: number) => `${v}%`} />
-            <Tooltip formatter={(value) => `${value}%`} contentStyle={{ borderRadius: 12, border: "1px solid #EBE7E3" }} />
+            <Tooltip formatter={(value: number) => `${value}%`} contentStyle={{ borderRadius: 12, border: "1px solid #EBE7E3" }} />
             <Bar dataKey="engagement" radius={[8, 8, 0, 0]}>
               {engagementData.map((entry, i) => (
                 <Cell key={i} fill={entry.color} />
