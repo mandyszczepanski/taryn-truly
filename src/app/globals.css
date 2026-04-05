@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 /* Taryn Creator Command Center — Global Styles */
 
 :root {
@@ -17,8 +19,8 @@
   --warning: #F59E0B;
   --info: #60A5FA;
   --negative: #EF4444;
-  --font-heading: 'Playfair Display', Georgia, serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: var(--font-playfair, 'Playfair Display', Georgia, serif);
+  --font-body: var(--font-inter, 'Inter', -apple-system, BlinkMacSystemFont, sans-serif);
   --radius: 12px;
   --radius-sm: 8px;
   --shadow: 0 1px 3px rgba(28,25,23,0.06), 0 4px 12px rgba(28,25,23,0.04);
