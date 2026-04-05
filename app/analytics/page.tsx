@@ -58,7 +58,7 @@ export default function AnalyticsPage() {
               onClick={() => setSelectedRange(r)}
               className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
                 selectedRange === r
-                  ? "bg-accent-rose text-white"
+                  ? "bg-accent-rose/35 text-primary-900 ring-1 ring-primary-300"
                   : "bg-primary-100 text-primary-700 hover:bg-primary-200"
               }`}
             >
@@ -100,10 +100,10 @@ export default function AnalyticsPage() {
             <XAxis dataKey="date" tick={{ fontSize: 12, fill: "#8B6F5E" }} />
             <YAxis
               tick={{ fontSize: 12, fill: "#8B6F5E" }}
-              tickFormatter={(v: number) => formatFollowers(v)}
+              tickFormatter={(v) => formatFollowers(Number(v ?? 0))}
             />
             <Tooltip
-              formatter={(value) => formatFollowers(Number(value))}
+              formatter={(value) => formatFollowers(Number(value ?? 0))}
               contentStyle={{ borderRadius: 12, border: "1px solid #EBE7E3" }}
             />
             <Legend />
@@ -129,8 +129,8 @@ export default function AnalyticsPage() {
           <BarChart data={engagementData}>
             <CartesianGrid strokeDasharray="3 3" stroke="#EBE7E3" />
             <XAxis dataKey="name" tick={{ fontSize: 12, fill: "#8B6F5E" }} />
-            <YAxis tick={{ fontSize: 12, fill: "#8B6F5E" }} tickFormatter={(v: number) => `${v}%`} />
-            <Tooltip formatter={(value) => `${value}%`} contentStyle={{ borderRadius: 12, border: "1px solid #EBE7E3" }} />
+            <YAxis tick={{ fontSize: 12, fill: "#8B6F5E" }} tickFormatter={(v) => `${Number(v ?? 0)}%`} />
+            <Tooltip formatter={(value) => `${Number(value ?? 0)}%`} contentStyle={{ borderRadius: 12, border: "1px solid #EBE7E3" }} />
             <Bar dataKey="engagement" radius={[8, 8, 0, 0]}>
               {engagementData.map((entry, i) => (
                 <Cell key={i} fill={entry.color} />

@@ -7,6 +7,8 @@ const links = [
   { href: "/", label: "Dashboard", icon: "📊" },
   { href: "/inbox", label: "Inbox", icon: "📬" },
   { href: "/analytics", label: "Analytics", icon: "📈" },
+  { href: "/brand-deals", label: "Brand Deals", icon: "🤝" },
+  { href: "/platforms", label: "Platforms", icon: "🧩" },
 ];
 
 export default function Nav() {
@@ -31,7 +33,7 @@ export default function Nav() {
                 href={link.href}
                 className={`flex items-center gap-3 px-4 py-2.5 rounded-full text-sm font-medium transition-colors ${
                   active
-                    ? "bg-accent-rose text-white"
+                    ? "bg-accent-rose/35 text-primary-900 ring-1 ring-primary-300"
                     : "text-primary-700 hover:bg-primary-100"
                 }`}
               >
@@ -53,7 +55,7 @@ export default function Nav() {
               href={link.href}
               className={`flex flex-col items-center gap-0.5 px-4 py-1.5 rounded-xl text-xs font-medium transition-colors ${
                 active
-                  ? "bg-accent-rose text-white"
+                  ? "bg-accent-rose/35 text-primary-900 ring-1 ring-primary-300"
                   : "text-primary-700"
               }`}
             >

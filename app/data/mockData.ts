@@ -103,3 +103,83 @@ export const topContent: Record<string, Array<{ title: string; platform: string;
     { title: "Annual beauty favorites", platform: "pinterest", views: "—", likes: "—", comments: "94K saves" },
   ],
 };
+
+export const brandDeals = [
+  { id: "deal-1", brand: "Fenty Beauty", campaign: "Summer Skin Launch", status: "Negotiating", payoutStatus: "Pending", amount: 4200, dueDate: "2026-04-18" },
+  { id: "deal-2", brand: "Everlane", campaign: "Spring Capsule Wardrobe", status: "Active", payoutStatus: "Invoice Sent", amount: 2200, dueDate: "2026-04-10" },
+  { id: "deal-3", brand: "Athleta", campaign: "Wellness Week Story Series", status: "Active", payoutStatus: "Pending", amount: 6800, dueDate: "2026-04-22" },
+  { id: "deal-4", brand: "Sephora", campaign: "Clean Makeup Tutorial", status: "Paid", payoutStatus: "Paid", amount: 9500, dueDate: "2026-03-27" },
+  { id: "deal-5", brand: "Ritual", campaign: "Morning Routine Integration", status: "Negotiating", payoutStatus: "Pending", amount: 3800, dueDate: "2026-04-25" },
+];
+
+export const affiliateIncome = [
+  { network: "LTK", today: 420, last7Days: 2480, trend: "+14%" },
+  { network: "Amazon", today: 310, last7Days: 1895, trend: "+7%" },
+  { network: "ShopMy", today: 190, last7Days: 1240, trend: "+19%" },
+];
+
+export const platformSnapshots = [
+  {
+    id: "instagram-personal",
+    label: "Instagram (Personal)",
+    followers: "890K",
+    reach: "4.8M / 30d",
+    topPost: "GRWM for a cozy Sunday",
+    comments: ["This edit is everything.", "Need the product list please.", "Love this version of you."],
+    dmPreview: "Would you be open to a spring collab?",
+  },
+  {
+    id: "instagram-business",
+    label: "Instagram (Business)",
+    followers: "189K",
+    reach: "1.2M / 30d",
+    topPost: "Studio setup breakdown",
+    comments: ["Your workflow is so smart.", "Can you share your camera settings?"],
+    dmPreview: "Potential paid partnership for Q2 launch.",
+  },
+  {
+    id: "youtube",
+    label: "YouTube",
+    followers: "340K",
+    reach: "2.3M / 30d",
+    topPost: "3-step glass skin tutorial",
+    comments: ["This was insanely helpful.", "You explain everything so clearly."],
+    dmPreview: "Podcast invite + collab opportunity.",
+  },
+  {
+    id: "tiktok",
+    label: "TikTok",
+    followers: "2.4M",
+    reach: "12.8M / 30d",
+    topPost: "My morning skin ritual",
+    comments: ["Watched this 5 times already.", "Please do part 2 tonight."],
+    dmPreview: "Brand manager here, we should talk rates.",
+  },
+  {
+    id: "substack",
+    label: "Substack",
+    followers: "45K",
+    reach: "312K opens / 30d",
+    topPost: "On burnout, boundaries, and beauty",
+    comments: ["You wrote exactly what I needed.", "This hit me hard in the best way."],
+    dmPreview: "Just joined HQ, thank you for this community.",
+  },
+  {
+    id: "facebook",
+    label: "Facebook",
+    followers: "67K",
+    reach: "640K / 30d",
+    topPost: "Weekly routines carousel",
+    comments: ["Shared with my sister.", "Can you link this product set?"],
+    dmPreview: "Would love a creator workshop replay.",
+  },
+  {
+    id: "pinterest",
+    label: "Pinterest",
+    followers: "120K",
+    reach: "3.9M / 30d",
+    topPost: "Spring Wellness Rituals board",
+    comments: ["Saved this whole board.", "Exactly my aesthetic."],
+    dmPreview: "Board collaboration request from lifestyle account.",
+  },
+];

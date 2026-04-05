@@ -4,7 +4,7 @@ import { useState } from "react";
 import { inboxThreads } from "../data/mockData";
 import PlatformBadge from "../components/PlatformBadge";
 
-const tabs = ["all", "tiktok", "instagram", "youtube", "pinterest", "substack"];
+const tabs = ["all", "tiktok", "instagram", "youtube", "pinterest", "substack", "facebook"];
 const tabLabels: Record<string, string> = {
   all: "All",
   tiktok: "TikTok",
@@ -12,6 +12,7 @@ const tabLabels: Record<string, string> = {
   youtube: "YouTube",
   pinterest: "Pinterest",
   substack: "Substack",
+  facebook: "Facebook",
 };
 
 export default function InboxPage() {
@@ -70,7 +71,7 @@ export default function InboxPage() {
             onClick={() => setActiveTab(tab)}
             className={`px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
               activeTab === tab
-                ? "bg-accent-rose text-white"
+                ? "bg-accent-rose/35 text-primary-900 ring-1 ring-primary-300"
                 : "bg-primary-100 text-primary-700 hover:bg-primary-200"
             }`}
           >
@@ -179,7 +180,7 @@ export default function InboxPage() {
                     className="flex-1 border border-primary-200 rounded-xl px-4 py-2 text-sm resize-none focus:outline-none focus:ring-2 focus:ring-accent-rose/50 bg-primary-50"
                   />
                   <button
-                    className="px-5 py-2 bg-accent-rose text-white rounded-xl text-sm font-medium hover:bg-primary-500 transition-colors self-end"
+                    className="px-5 py-2 bg-accent-mulberry text-white rounded-xl text-sm font-medium hover:bg-[#351015] transition-colors self-end"
                   >
                     Send Reply
                   </button>

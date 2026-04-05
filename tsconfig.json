@@ -30,5 +30,9 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-  "exclude": ["node_modules", "taryn-creator-mvp"]
+  "exclude": [
+    "node_modules",
+    "temp_clone/**",
+    "taryn-creator-mvp/**"
+  ]
 }
