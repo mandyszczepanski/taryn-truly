@@ -24,6 +24,38 @@ export default function BrandDealsPage() {
         Brand Deals
       </h1>
 
+      {/* Summary Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-8">
+        <div className="bg-white rounded-xl shadow-sm p-6">
+          <p className="text-xs text-[#C4845C] uppercase tracking-wide mb-1">Total Earned</p>
+          <p
+            className="text-2xl font-semibold text-[#2D2420]"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            $7,200
+          </p>
+          <p className="text-xs text-green-600 mt-1">Paid</p>
+        </div>
+        <div className="bg-white rounded-xl shadow-sm p-6">
+          <p className="text-xs text-[#C4845C] uppercase tracking-wide mb-1">Pipeline Value</p>
+          <p
+            className="text-2xl font-semibold text-[#2D2420]"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            $9,300
+          </p>
+        </div>
+        <div className="bg-white rounded-xl shadow-sm p-6">
+          <p className="text-xs text-[#C4845C] uppercase tracking-wide mb-1">Active Deals</p>
+          <p
+            className="text-2xl font-semibold text-[#2D2420]"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            2
+          </p>
+        </div>
+      </div>
+
       <div className="bg-white rounded-xl shadow-sm p-6 overflow-x-auto">
         <table className="w-full text-sm">
           <thead>
@@ -57,36 +89,6 @@ export default function BrandDealsPage() {
         </table>
       </div>
 
-      {/* Summary */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-8">
-        <div className="bg-white rounded-xl shadow-sm p-6">
-          <p className="text-xs text-[#C4845C] uppercase tracking-wide mb-1">Total Deals</p>
-          <p
-            className="text-2xl font-semibold text-[#2D2420]"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-          >
-            4
-          </p>
-        </div>
-        <div className="bg-white rounded-xl shadow-sm p-6">
-          <p className="text-xs text-[#C4845C] uppercase tracking-wide mb-1">Total Value</p>
-          <p
-            className="text-2xl font-semibold text-[#2D2420]"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-          >
-            $16,500
-          </p>
-        </div>
-        <div className="bg-white rounded-xl shadow-sm p-6">
-          <p className="text-xs text-[#C4845C] uppercase tracking-wide mb-1">Paid Out</p>
-          <p
-            className="text-2xl font-semibold text-[#2D2420]"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-          >
-            $7,200
-          </p>
-        </div>
-      </div>
     </div>
   );
 }
